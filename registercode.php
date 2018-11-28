@@ -41,7 +41,7 @@ function var_error_log( $object=null ){
         $hash = password_hash($password, PASSWORD_DEFAULT);
 
         // add database code here
-        $conn = mysqli_connect('localhost', 'root', '', 'soc_net');
+        $conn = mysqli_connect(SERVERNAME, USERNAME, PASSWORD, DBNAME);
         // Change character set to utf8
         mysqli_set_charset($conn,"utf8");
       
